@@ -1,0 +1,293 @@
+:root {
+  --yellow: #FFD300;
+  --gray: #F3F4F9;
+  --teal: #359CBC;
+  --boxGray: #dadada;
+  --darkGray: #86899B;
+  --darkTeal: #006788;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  height: 200vh;
+  position: relative;
+  font-family: Roboto, sans-serif;
+}
+
+.hero-bg {
+  width: 100%;
+}
+
+.content-container {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: white;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.header span {
+  font-weight: 300;
+}
+
+.header span a {
+  color: white;
+}
+
+.header span a:hover,
+.header span a:visited {
+  color: var(--yellow);
+}
+
+.header h1 {
+  text-align: center;
+  margin-top: 75px;
+  color: white;
+  font-size: 48px;
+}
+
+.header h2 {
+  text-align: center;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.75);
+  /* font-size: 18px; */
+  font-size: 24px;
+}
+
+.header .buttons {
+  margin-top: 75px;
+  text-align: center;
+}
+
+.button {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.header .buttons a:first-child {
+  margin-right: 20px;
+}
+
+.header .buttons a:nth-child(2) {
+  margin-left: 20px;
+}
+
+.button.transparent {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.button.yellow {
+  background-color: var(--yellow);
+  color: black;
+  border: 1px solid var(--yellow);
+}
+
+.hero {
+  margin-top: 80px;
+}
+
+.hero .hero-img {
+  text-align: center;
+}
+
+.hero .sign-up {
+  width: 640px;
+  background-color: var(--gray);
+  padding: 40px;
+  margin: 40px auto 40px auto;
+  border-radius: 16px;
+  box-shadow: 1px 2px 0px var(--boxGray);
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero .sign-up .sign-up-copy {
+  width: 45%;
+  padding-right: 40px;
+}
+
+.hero .sign-up .sign-up-copy h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.hero .sign-up .sign-up-copy span {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+  display: block;
+  color: var(--darkGray);
+  margin-bottom: 20px;
+}
+
+.hero .sign-up .sign-up-copy .list {
+  /* list-style: none; */
+  margin-top: 40px;
+  /* margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0; */
+}
+
+.hero .sign-up .sign-up-copy .list .item {
+  display: flex;
+  /* align-items: baseline; */
+  justify-content: flex-start;
+}
+
+.hero .sign-up .sign-up-copy .list .item .bullet {
+  background-color: var(--teal);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 12px;
+  margin-top: 14px;
+}
+
+.hero .sign-up .sign-up-copy .list .item .text {
+  font-weight: 600;
+  color: black;
+}
+
+.hero .sign-up .sign-up-form {
+  width: 45%;
+}
+
+.hero .sign-up .sign-up-form label {
+  font-weight: 600;
+  color: black;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 8px;
+}
+
+.hero .sign-up .sign-up-form input {
+  border-radius: 4px;
+  box-shadow: 1px 2px 0px var(--boxGray);
+  color: var(--darkGray);
+  padding: 10px 8px;
+  display: block;
+  width: 93%;
+  margin-top: 4px;
+  margin-bottom: 18px;
+  border: none;
+  font-size: 16px;
+}
+
+.hero .sign-up .sign-up-form input:focus {
+  outline: 1px solid var(--teal);
+}
+
+.hero .sign-up .sign-up-form .button.yellow {
+  margin-top: 4px;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+#highlights {
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 0 75px;
+}
+
+#highlights .heading-small {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--darkGray);
+}
+
+#highlights h3 {
+  font-size: 24px;
+}
+
+#highlights .heading-description {
+  font-size: 14px;
+  color: var(--darkGray);
+  font-weight: 600;
+  margin-top: 75px;
+  display: block;
+}
+
+.highlights-features {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.highlights-features .highlights-feature {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.highlights-features .highlights-feature svg {
+  width: 42px;
+  height: 42px;
+  margin-top: 16px;
+}
+
+.highlights-features .highlights-feature svg path {
+  fill: var(--darkTeal);
+}
+
+.highlights-features .highlights-feature .copy {
+  width: 375px;
+  padding: 0 60px 30px 20px;
+}
+
+.highlights-features .highlights-feature .copy h4 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.highlights-features .highlights-feature .copy span {
+  font-size: 16px;
+}
+
+.carousel {
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.carousel .quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.carousel .quote img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+
+.carousel .quote .text {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.carousel .quote .source {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--darkGray);
+  font-weight: 600;
+}
