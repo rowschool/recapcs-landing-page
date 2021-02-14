@@ -9,7 +9,6 @@
 
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- , shrink-to-fit=yes"> -->
 
 
     <meta property="og:type" content="website" />
@@ -21,8 +20,11 @@
 
     <link type="text/css" href="styles.css" rel="stylesheet">
 
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> -->
+
+    <script src="scripts.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
   </head>
 
@@ -83,18 +85,21 @@
               </div>
             </div>
           </div>
-          <div class="sign-up-form">
-            <label>Full Name
-              <input type="text" />
-            </label>
-            <label>Email Address
-              <input type="text" />
-            </label>
-            <label>Message
-              <textarea rows="8" /></textarea>
-            </label>
 
-            <button class="button yellow">Send a message</button>
+          <div class="sign-up-form">
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSez7YHjepcv5gOPbgjiEdCCChRdS1bX4VNUMCQuTYfq_T9iNg/formResponse" method="POST">
+              <label>Full Name
+                <input name="entry.636312469" type="text" />
+              </label>
+              <label>Email Address
+                <input name="entry.804617311" type="text" />
+              </label>
+              <label>Message
+                <textarea name="entry.1915141043" rows="8" /></textarea>
+              </label>
+
+              <button class="button yellow">Send a message</button>
+            </form>
           </div>
         </div>
       </div>
