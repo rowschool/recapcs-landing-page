@@ -42,11 +42,11 @@
           A learning tool to increase peer collaboration and deepen reflection in computer science
         </h2>
         <div class="buttons">
-          <a href="#highlights" style="text-decoration: none;">
-            <button class="button transparent">Read More</button>
-          </a>
           <a href="#contact" style="text-decoration: none;">
             <button class="button yellow">Request Access</button>
+          </a>
+          <a href="#highlights" style="text-decoration: none;">
+            <button class="button transparent">Read More</button>
           </a>
         </div>
       </div>
@@ -55,19 +55,31 @@
         <div class="hero-img">
           <img src="images/hero.png" />
         </div>
-        <div class="sign-up">
+        <div class="sign-up" id="contact">
           <div class="sign-up-copy">
-            <h3>Get a free sample!</h3>
-            <span>Enter your name and email to get in touch with our team!</span>
+            <h3>Learn more!</h3>
+            <span>Are you a student, teacher, or researcher interested in using RecapCS? Sign up for our mailing list today!</span>
 
             <div class="list">
               <div class="item">
                 <div class="bullet"></div>
-                <span class="text">Some feature</span>
+                <span class="text">Ask and Answer Questions</span>
               </div>
               <div class="item">
                 <div class="bullet"></div>
-                <span class="text">Some other feature</span>
+                <span class="text">Save Bookmarks and Resources</span>
+              </div>
+              <div class="item">
+                <div class="bullet"></div>
+                <span class="text">Peer Mentors and Recognition</span>
+              </div>
+              <div class="item">
+                <div class="bullet"></div>
+                <span class="text">Set Goals and Track Project Milestones</span>
+              </div>
+              <div class="item">
+                <div class="bullet"></div>
+                <span class="text">Teacher Virtual Community of Practice</span>
               </div>
             </div>
           </div>
@@ -79,7 +91,7 @@
               <input type="text" />
             </label>
             <label>Message
-              <input type="text" />
+              <textarea rows="8" /></textarea>
             </label>
 
             <button class="button yellow">Send a message</button>
@@ -88,28 +100,24 @@
       </div>
 
       <div id="highlights">
-        <span class="heading-small">THE MAIN FEATURES</span>
 
         <h3>Highlights</h3>
 
-        <span class="heading-description">Lorem ipsum</span>
+        <span class="heading-small">MAIN FEATURES</span>
+
+        <span class="heading-description">
+          We built RecapCS after talking to high school students, teachers, and professional development providers.
+          <br /><br />
+          We're proud to present something that will help teachers better understand and address their students' learning challenges in computer science!
+        </span>
 
         <div class="highlights-features">
           <div class="highlights-feature">
-            <svg id="forum" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M17,12V3A1,1 0 0,0 16,2H3A1,1 0 0,0 2,3V17L6,13H16A1,1 0 0,0 17,12M21,6H19V15H6V17A1,1 0 0,0 7,18H18L22,22V7A1,1 0 0,0 21,6Z" /></svg>
+            <svg id="comment-text-multiple" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M3,15H1V3A2,2 0 0,1 3,1H19V3H3V15M12,23A1,1 0 0,1 11,22V19H7A2,2 0 0,1 5,17V7A2,2 0 0,1 7,5H21A2,2 0 0,1 23,7V17A2,2 0 0,1 21,19H16.9L13.2,22.71C13,22.89 12.76,23 12.5,23H12M9,9V11H19V9H9M9,13V15H17V13H9Z" /></svg>
 
             <div class="copy">
               <h4>Ask &amp; Answer Questions</h4>
-              <span>Students can post a question for support, answer others’ questions and track the most heated question.</span>
-            </div>
-          </div>
-
-          <div class="highlights-feature">
-            <svg id="poll" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M3,22V8H7V22H3M10,22V2H14V22H10M17,22V14H21V22H17Z" /></svg>
-
-            <div class="copy">
-              <h4>Set Goals and Track Project Journeys</h4>
-              <span>Students can revise and ​customize ​each project phase throughout the project. The instructor can ​confirm the progress​ and also ​add new goals for students during check-ins.</span>
+              <span>Students can post questions to ask for support from their classmates and their instructors.</span>
             </div>
           </div>
 
@@ -118,7 +126,7 @@
 
             <div class="copy">
               <h4>Save Bookmarks and Resources</h4>
-              <span>Both instructor and students can upload useful project resources in the shared resource box. Students can also bookmark useful reply for future reference.</span>
+              <span>Students also bookmark useful replies for future reference. Both teachers and students can upload useful CS project resources in a shared class resource repository.</span>
             </div>
           </div>
 
@@ -126,20 +134,45 @@
             <svg id="bookmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z" /></svg>
 
             <div class="copy">
-              <h4>Mark Breakthroughs</h4>
-              <span>To help students document their triumphs, breakthroughs are designed to help students reflect on their solutions when they encounter similar processes in the future.</span>
+              <h4>Peer Mentors and Recognition</h4>
+              <span>We call our peer mentors Breakthrough Heroes. To help students document their triumphs, breakthroughs are designed to help students reflect on their solutions when they encounter similar processes in the future.</span>
+            </div>
+          </div>
+
+          <div class="highlights-feature">
+            <svg id="poll" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M3,22V8H7V22H3M10,22V2H14V22H10M17,22V14H21V22H17Z" /></svg>
+
+            <div class="copy">
+              <h4>Set Goals and Track Project Journeys</h4>
+              <span>Students can revise and customize each project phase throughout their projects, connecting project milestones with their Q&amp;A records. Their instructors can then confirm their project milestone progress and also add new goals for students during check-ins.</span>
+            </div>
+          </div>
+
+          <div class="highlights-feature">
+            <svg id="select-group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3A2 2 0 0 0 3 5H5M7 3V5H9V3M11 3V5H13V3M15 3V5H17V3M19 3V5H21A2 2 0 0 0 19 3M3 7V9H5V7M7 7V11H11V7M13 7V11H17V7M19 7V9H21V7M3 11V13H5V11M19 11V13H21V11M7 13V17H11V13M13 13V17H17V13M3 15V17H5V15M19 15V17H21V15M3 19A2 2 0 0 0 5 21V19M7 19V21H9V19M11 19V21H13V19M15 19V21H17V19M19 19V21A2 2 0 0 0 21 19Z" /></svg>
+
+            <div class="copy">
+              <h4>Teacher Virtual Community of Practice</h4>
+              <span>Teachers can cross-post questions and resources between their classes and a virtual cohort of their colleagues and mentors grouped by district, state, and professional development providers.</span>
             </div>
           </div>
         </div>
 
+        <span class="heading-small">FEEDBACK FROM OUR COMMUNITY PARTNERS</span>
+
         <div class="carousel">
           <div class="quote">
-            <img src="images/favicon-circle.png" />
-
-            <span class="text">&quot;Lorem ipsum&quot;</span>
-            <span class="source">Neil Smith</span>
+            <span class="text">&quot;It's usually one heroic teacher who takes the initiative in a school to teach CS, and they rarely have any support, training opportunities, or fellow champions within the school.&quot;</span>
+            <span class="source">Professional Development Provider</span>
           </div>
 
+          <div class="quote">
+            <span class="text">&quot;The challenges are that I don't know what the questions will be, so I can't prepare an answer ... I think [RecapCS] really works in helping me to identify what problems the students have.&quot;</span>
+            <span class="source">High School CS Teacher, Pittsburgh, PA</span>
+          </div>
+        </div>
+
+        <div class="request-access">
           <a href="#contact">
             <button class="button yellow">Request Access</button>
           </a>
@@ -149,8 +182,4 @@
   </body>
 </html>
 
-<!-- It’s usually one heroic teacher who takes the initiative in a school to teach CS, and they rarely have any support, training opportunities, or fellow champions within the school.”
-
-“I think it really works in helping me to identify what problems the students have.”
-
-“The challenges are that I don’t know what the questions will be, so I can’t prepare an answer.” —David Nassar -->
+<!-- Set up RecapCS.com email address. -->

@@ -157,7 +157,7 @@
     height: 8px;
     border-radius: 50%;
     margin-right: 12px;
-    margin-top: 18px;
+    margin-top: 14px;
   }
 
   .hero .sign-up .sign-up-copy .list .item .text {
@@ -178,13 +178,14 @@
     margin-top: 8px;
   }
 
-  .hero .sign-up .sign-up-form input {
+  .hero .sign-up .sign-up-form input,
+  .hero .sign-up .sign-up-form textarea {
     border-radius: 4px;
     box-shadow: 1px 2px 0px var(--boxGray);
     color: var(--darkGray);
     padding: 10px 8px;
     display: block;
-    width: 100%;
+    width: 95%;
     margin-top: 4px;
     margin-bottom: 18px;
     border: none;
@@ -218,17 +219,17 @@
   }
 
   #highlights .heading-description {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--darkGray);
-    font-weight: 600;
-    margin-top: 75px;
+    /* font-weight: 600; */
+    margin-top: 40px;
+    margin-bottom: 40px;
     display: block;
   }
 
   .highlights-features {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 40px;
   }
 
   .highlights-features .highlights-feature {
@@ -262,11 +263,12 @@
   }
 
   .carousel {
-    margin-left: 200px;
-    margin-right: 200px;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .carousel .quote {
@@ -276,9 +278,12 @@
     margin-bottom: 40px;
   }
 
-  .carousel .quote img {
-    width: 40px;
-    margin-bottom: 20px;
+  .carousel .quote:first-child {
+    padding-right: 40px;
+  }
+
+  .carousel .quote:nth-child(2) {
+    padding-left: 40px;
   }
 
   .carousel .quote .text {
@@ -292,6 +297,11 @@
     text-transform: uppercase;
     color: var(--darkGray);
     font-weight: 600;
+  }
+
+  .request-access {
+    text-align: center;
+    margin-bottom: 40px;
   }
 }
 
@@ -479,6 +489,7 @@
   .hero .sign-up .sign-up-copy .list .item .text {
     font-weight: 600;
     color: black;
+    text-align: left;
   }
 
   .hero .sign-up .sign-up-form {
@@ -494,7 +505,8 @@
     margin-top: 8px;
   }
 
-  .hero .sign-up .sign-up-form input {
+  .hero .sign-up .sign-up-form input,
+  .hero .sign-up .sign-up-form textarea {
     border-radius: 4px;
     box-shadow: 1px 2px 0px var(--boxGray);
     color: var(--darkGray);
@@ -535,15 +547,17 @@
   #highlights h3 {
     font-size: 24px;
     color: white;
+    margin: 8px 0;
   }
 
   #highlights .heading-description {
-    font-size: 14px;
+    font-size: 16px;
     /* color: var(--darkGray); */
     color: white;
-    font-weight: 600;
-    margin-top: 40px;
+    /* font-weight: 600; */
+    margin-top: 10px;
     display: block;
+    padding: 0 40px;
   }
 
   .highlights-features {
@@ -587,28 +601,25 @@
   }
 
   .carousel {
-    margin-left: 200px;
-    margin-right: 200px;
+    /* margin-left: 200px;
+    margin-right: 200px; */
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 100px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    padding: 0 20px;
   }
 
   .carousel .quote {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 40px;
-  }
-
-  .carousel .quote img {
-    width: 40px;
-    margin-bottom: 20px;
-    border: 1px solid red;
+    margin-bottom: 60px;
   }
 
   .carousel .quote .text {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 300;
     margin-bottom: 15px;
   }
@@ -619,5 +630,10 @@
     /* color: var(--darkGray); */
     color: white;
     font-weight: 600;
+  }
+
+  .request-access {
+    margin-top: 80px;
+    margin-bottom: 40px;
   }
 }
