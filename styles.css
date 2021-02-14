@@ -202,6 +202,18 @@
     text-transform: uppercase;
   }
 
+  .hero .sign-up .sign-up-form .message {
+    text-align: center;
+    height: 100%;
+  }
+
+  .hero .sign-up .sign-up-form .message .text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+  }
+
   #highlights {
     margin-left: 200px;
     margin-right: 200px;
