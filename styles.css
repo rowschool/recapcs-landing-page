@@ -664,6 +664,7 @@
   .request-access {
     margin-top: 80px;
     margin-bottom: 40px;
+    padding: 0 40px;
   }
 
   .request-access span {
