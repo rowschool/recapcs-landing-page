@@ -367,6 +367,10 @@
     width: 75px;
   }
 
+  .header-top .twitter-logo {
+    display: none;
+  }
+
   .header-top span {
     display: none;
   }

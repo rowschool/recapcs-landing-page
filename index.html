@@ -38,7 +38,7 @@
           </a>
           <div style="display: flex;align-items:center;">
             <span><a href="#contact">Get in contact</a> if you have any questions.</span>
-            <a href="https://twitter.com/recapcs" rel="noopener" target="_blank" style="margin-left: 25px;">
+            <a class="twitter-logo" href="https://twitter.com/recapcs" rel="noopener" target="_blank" style="margin-left: 25px;">
               <img src="images/twitter-logo.png" width="30" />
             </a>
           </div>
@@ -92,7 +92,7 @@
 
           <div class="sign-up-form">
             <script type="text/javascript">var submitted=false;</script>
-            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {var signupDiv = document.querySelector('.sign-up-form');var formEl = signupDiv.children[2];var messageEl = signupDiv.children[3];formEl.style.display = 'none';messageEl.style.display = 'block';}"></iframe>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {document.querySelector('.send-a-message').hidden = true;var signupDiv = document.querySelector('.sign-up-form');var formEl = signupDiv.children[2];var messageEl = signupDiv.children[3];formEl.style.display = 'none';messageEl.style.display = 'block';}"></iframe>
 
             <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSez7YHjepcv5gOPbgjiEdCCChRdS1bX4VNUMCQuTYfq_T9iNg/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
               <label>Full Name
@@ -105,7 +105,7 @@
                 <textarea name="entry.1915141043" rows="8" /></textarea>
               </label>
 
-              <button class="button yellow">Send a message</button>
+              <button class="send-a-message button yellow">Send a message</button>
             </form>
             <div class="message" style="display: none;">
               <span class="text">Thank you for your message! We'll get back to you soon!</span>
