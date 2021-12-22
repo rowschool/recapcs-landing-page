@@ -30,7 +30,7 @@
 
   .content-container {
     position: absolute;
-    top: 50px;
+    top: 100px;
     width: 100%;
   }
 
@@ -215,13 +215,14 @@
   }
 
   #highlights {
+    margin-top: 200px;
     margin-left: 200px;
     margin-right: 200px;
     padding: 0 75px;
   }
 
   #highlights .heading-small {
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 600;
     color: var(--darkGray);
   }
@@ -305,7 +306,7 @@
   }
 
   .carousel .quote .source {
-    font-size: 10px;
+    font-size: 14px;
     text-transform: uppercase;
     color: var(--darkGray);
     font-weight: 600;
@@ -571,7 +572,7 @@
   }
 
   #highlights .heading-small {
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 600;
     /* color: var(--darkGray); */
     color: white;
@@ -658,7 +659,7 @@
   }
 
   .carousel .quote .source {
-    font-size: 10px;
+    font-size: 14px;
     text-transform: uppercase;
     /* color: var(--darkGray); */
     color: white;
