@@ -25,6 +25,16 @@
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+
+    <script src="https://google.com/recaptcha/api.js?render=6Lc38Z0fAAAAAPs6Uw6FNq6YoUQ79b6Ar8l1iVz_"></script>
+    <script>
+      grecaptcha.ready(function() {
+        grecaptcha.execute('6Lc38Z0fAAAAAPs6Uw6FNq6YoUQ79b6Ar8l1iVz_', { action: 'submit' }).then(function(token) {
+          var recaptchaResponse = document.getElementById('recaptchaResponse');
+          recaptchaResponse.value = token;
+        });
+      });
+    </script>
   </head>
 
   <body>
@@ -104,6 +114,8 @@
               <label>Message
                 <textarea name="entry.1915141043" rows="8" /></textarea>
               </label>
+
+              <input type="hidden" name="recaptcha_response" id="recaptchaResponse" />
 
               <button class="send-a-message button yellow">Send a message</button>
             </form>
