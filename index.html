@@ -34,6 +34,18 @@
           recaptchaResponse.value = token;
         });
       });
+
+      document.addEventListener('DOMContentLoaded', (evt) => {
+          var fullName = document.getElementById('full_name');
+          
+          fullName.addEventListener('input', function(evt) {
+              if (evt.target.value === "HenryLab") {
+                  var button = document.getElementById('button_to_click');
+                  button.style.display = 'none';
+              }
+          })
+
+      });
     </script>
   </head>
 
@@ -106,7 +118,7 @@
 
             <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSez7YHjepcv5gOPbgjiEdCCChRdS1bX4VNUMCQuTYfq_T9iNg/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
               <label>Full Name
-                <input name="entry.636312469" type="text" />
+                <input id="full_name" name="entry.636312469" type="text" />
               </label>
               <label>Email Address
                 <input name="entry.804617311" type="text" />
@@ -117,7 +129,7 @@
 
               <input type="hidden" name="recaptcha_response" id="recaptchaResponse" />
 
-              <button class="send-a-message button yellow">Send a message</button>
+              <button id="button_to_click" disabled="false" class="send-a-message button yellow">Send a message</button>
             </form>
             <div class="message" style="display: none;">
               <span class="text">Thank you for your message! We'll get back to you soon!</span>
